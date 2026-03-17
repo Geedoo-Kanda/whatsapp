@@ -9,7 +9,7 @@ const app = express();
 
 // Autoriser CORS pour Laravel
 app.use(cors({
-  origin: "http://localhost:8000",
+  origin: ["http://localhost:8000", 'http://test.zahedstrore.com/'],
   methods: ["POST"],
   allowedHeaders: ["Content-Type"]
 }));
